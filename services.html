@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+            color: #333;
+        }
+
+        .header {
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: #4caf50;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1.5rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .service-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">Our Hospital Services</header>
+    <div class="container">
+        <div class="services">
+            <div class="service-card">
+                <img src="static/service img/download (1).jpeg" alt="Emergency">
+                <h3>Emergency Services</h3>
+                <p>24/7 emergency services with state-of-the-art equipment and highly trained staff.</p>
+            </div>
+            <div class="service-card">
+                <img src="static/service img/download (2).jpeg" alt="Surgery">
+                <h3>Surgical Services</h3>
+                <p>Advanced surgical procedures performed by experienced surgeons.</p>
+            </div>
+            <div class="service-card">
+                <img src="static/service img/download (3).jpeg" alt="Maternity">
+                <h3>Maternity Care</h3>
+                <p>Comprehensive care for expecting mothers and newborns.</p>
+            </div>
+            <div class="service-card">
+                <img src="static/service img/olga-guryanova-tmfeatbss4s-unsplash.jpg" alt="Diagnostics">
+                <h3>Diagnostics</h3>
+                <p>Accurate and timely diagnostic services with modern technology.</p>
+            </div>
+            <div class="service-card">
+                <img src="static/service img/phar.jpeg" alt="Pharmacy">
+                <h3>Pharmacy</h3>
+                <p>Fully stocked pharmacy with medications and health supplies.</p>
+            </div>
+            <div class="service-card">
+                <img src="static/service img/rehab.jpeg" alt="Rehabilitation">
+                <h3>Rehabilitation</h3>
+                <p>Comprehensive rehab services for faster recovery and better health.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2025 Hospital Name | <a href="#">Privacy Policy</a>
+    </footer>
+</body>
+</html>
